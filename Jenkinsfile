@@ -18,10 +18,8 @@ pipeline {
         stage('Build Image') {
             steps {
                 echo "Building Docker image: ${DOCKERHUB_USERNAME}/${IMAGE_NAME}:${env.BUILD_ID}"
-                script {
-                    // Builds the image using the Dockerfile in your folder
-                    dockerImage = docker.build("${DOCKERHUB_USERNAME}/${IMAGE_NAME}:${env.BUILD_ID}", ".")
-                }
+                // Use the 'sh' command, just like your other stages
+                sh "docker build -t ${DOCKERHUB_USERNAME}/${IMAGE_NAME}:${env.BUILD_ID} ."
             }
         }
 
