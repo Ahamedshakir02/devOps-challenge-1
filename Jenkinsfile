@@ -10,7 +10,7 @@ pipeline {
 
         // 🚨--- ACTION REQUIRED: SET THIS ---🚨
         // This ID must match the one you create in Jenkins
-        DOCKER_CREDENTIAL_ID = '8d133e65-cd62-48dd-8fbe-d9f46d25d0a0' 
+        DOCKER_CREDENTIAL_ID = '0ea24d48-dc2f-4bea-8b1b-4b2cdb7ae393' 
     }
 
     stages {
