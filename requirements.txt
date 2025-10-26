@@ -1,4 +1,0 @@
-Flask==2.3.2
-gunicorn==22.1.0
-psycopg2-binary==2.9.6
-# Add any other libraries your app needs
