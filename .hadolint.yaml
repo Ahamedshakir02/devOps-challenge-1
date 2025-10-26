@@ -1,0 +1,3 @@
+ignored:
+  - DL3003   # Allow use of WORKDIR without absolute path (example)
+  - DL3008   # Ignore pinning python version strictly
